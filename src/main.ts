@@ -1,5 +1,9 @@
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { defineCustomElements } from "@esri/calcite-components/dist/loader";
+
+// define the elements, passing in the window
+defineCustomElements(window);
 
 import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
